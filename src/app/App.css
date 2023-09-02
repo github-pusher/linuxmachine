@@ -1,0 +1,169 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px    100% = 16px */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  background-color: #000;
+}
+
+p {
+  margin-top: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+@media only screen and (max-device-width: 812px) {
+  .App-header {
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+}
+
+.Clock {
+  position: relative;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 12rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem #ef5a00, -0.2rem -0.2rem 0.5rem #ff7800;
+  border-radius: 50%;
+}
+
+.Clock > .Hand {
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 6rem;
+  border-radius: 0.2rem;
+  z-index: 10;
+}
+
+.Clock > .Hours {
+  width: 0.4rem;
+  height: 3.2rem;
+  background-color: #bec8e4;
+}
+
+.Clock > .Minutes {
+  width: 0.4rem;
+  height: 4.6rem;
+  background-color: #9baacf;
+}
+
+.Clock > .Seconds {
+  width: 0.2rem;
+  height: 5.2rem;
+  background-color: #fd7e14;
+}
+
+.Clock > .Point {
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #fd7e14;
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.Clock > .Marker {
+  position: relative;
+  width: 95%;
+  height: 95%;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #1b1b1b, inset -0.2rem -0.2rem 0.5rem #30343a;
+  border-radius: 50%;
+}
+
+.Clock > .Marker::after {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  content: '';
+  width: 60%;
+  height: 60%;
+  box-shadow: inset 1px 1px 1px #ef5a00, inset -1px -1px 1px #ff7800;
+  border-radius: 50%;
+  filter: blur(1px);
+}
+
+.Clock .Marker__1,
+.Clock .Marker__2,
+.Clock .Marker__3,
+.Clock .Marker__4 {
+  position: absolute;
+  box-shadow: inset 1px 1px 1px #000000, inset -1px -1px 1px #1b1b1b;
+  background-color: #f6f1e5;
+}
+
+.Clock .Marker__1,
+.Clock .Marker__2 {
+  width: 0.2rem;
+  height: 0.6rem;
+  left: 5.6rem;
+}
+
+.Clock .Marker__3,
+.Clock .Marker__4 {
+  width: 0.6rem;
+  height: 0.2rem;
+  top: 5.6rem;
+}
+
+.Clock .Marker__1 {
+  top: 2%;
+}
+
+.Clock .Marker__2 {
+  top: 98%;
+  transform: translateY(-0.6rem);
+}
+
+.Clock .Marker__3 {
+  left: 2%;
+}
+
+.Clock .Marker__4 {
+  left: 98%;
+  transform: translateX(-0.6rem);
+}
+
+.Heading {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+
+.Logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: calc(10px + 2vmin);
+  user-select: none;
+}
+
+.Message {
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 1.6rem;
+}
+
+@media only screen and (max-device-width: 812px) and (orientation: landscape) {
+  .Message {
+    position: static;
+  }
+}
