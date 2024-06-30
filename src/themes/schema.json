@@ -1,0 +1,42 @@
+[
+  {
+    "name": "dark",
+    "colors": {
+      "bgColor": "rgb(16 18 27 / 40%)",
+      "border": "rgb(113 119 144 / 25%)",
+      "primary": "#f9fafb",
+      "inactive": "rgb(113 119 144 / 78%)",
+      "hoverMenuBg": "rgb(12 15 25 / 30%)",
+      "contentTitle": "#999ba5",
+      "contentBg": "rgb(146 151 179 / 13%)",
+      "buttonInactive": "rgb(249 250 251 / 55%)",
+      "dropdownBg": "#21242d",
+      "dropdown-hover": "rgb(42 46 60)",
+      "popupBg": "rgb(22 25 37)",
+      "popupBorder": "rgb(113 119 144 / 25%)",
+      "overlayBg": "rgb(36, 39, 59 / 30%)",
+      "scrollbarBg": "rgb(1 2 3 / 40%)",
+      "themeToggle": "#ffce45"
+    }
+  },
+  {
+    "name": "light",
+    "colors": {
+      "bgColor": "rgb(255 255 255 / 31%)",
+      "border": "rgb(255 255 255 / 25%)",
+      "primary": "#3c3a3a",
+      "inactive": "rgb(51 51 51)",
+      "hoverMenuBg": "rgb(255 255 255 / 35%)",
+      "contentTitle": "#3c3a3a",
+      "contentBg": "rgb(255 255 255 / 13%)",
+      "buttonInactive": "rgb(60, 58, 58)",
+      "dropdownBg": "#f7f7f7",
+      "dropdown-hover": "rgb(236 236 236)",
+      "popupBg": "rgb(255 255 255)",
+      "popupBorder": "rgb(60, 58, 58)",
+      "overlayBg": "rgb(255 255 255 / 30%)",
+      "scrollbarBg": "rgb(255 253 253 / 57%)",
+      "themeToggle": "#3c3a3a"
+    }
+  }
+]
